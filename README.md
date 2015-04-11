@@ -5,10 +5,10 @@
 
 ## Installation
 
-- [GeoIP for Laravel 5 on Packagist](https://packagist.org/packages/torann/geoip)
-- [GeoIP for Laravel 5 on GitHub](https://github.com/Torann/laravel-geoip)
+- [SypexGeo for Laravel 5 on Packagist](https://packagist.org/packages/scriptixru/sypexgeo)
+- [SypexGeo for Laravel 5 on GitHub](https://github.com/scriptixru/sypexgeo)
 
-To get the latest version of GeoIP simply require it in your `composer.json` file.
+To get the latest version of SypexGeo simply require it in your `composer.json` file.
 
 ~~~
 "scriptixru/sypexgeo": "0.2.*@dev"
