@@ -93,57 +93,59 @@ If data is received from the database - config/sypexgeo.php
         ];
 ```
 If data is received from the webservice - config/sypexgeo.php
-('type'  => 'web_service')
+    (   'type'  => 'web_service',
+        'view'  => 'json'
+    )
 ```php
         [
-            "ip" => "77.37.136.11"
-            "city" => array:8 [
-                    "id" => "524901"
-                    "lat" => "55.75222"
-                    "lon" => "37.61556"
-                    "name_ru" => "Москва"
-                    "name_en" => "Moscow"
-                    "okato" => "45"
-                    "vk" => "1"
-                    "population" => "10381222"
-            ]
-            "region" => array:11 [
-                    "id" => "524894"
-                    "lat" => "55.76"
-                    "lon" => "37.61"
+              "ip" => "77.37.136.11"
+              "city" => array:8 [
+                     "id" => 524901
+                     "lat" => 55.75222
+                     "lon" => 37.61556
+                     "name_ru" => "Москва"
+                     "name_en" => "Moscow"
+                     "okato" => "45"
+                     "vk" => 1
+                     "population" => 10381222
+                  ]
+              "region" => array:11 [
+                    "id" => 524894
+                    "lat" => 55.76
+                    "lon" => 37.61
                     "name_ru" => "Москва"
                     "name_en" => "Moskva"
                     "iso" => "RU-MOW"
                     "timezone" => "Europe/Moscow"
                     "okato" => "45"
                     "auto" => "77, 97, 99, 177, 197, 199, 777"
-                    "vk" => "0"
-                    "utc" => "3"
-            ]
-            "country" => array:18 [
-                    "id" => "185"
+                    "vk" => 0
+                    "utc" => 3
+              ]
+              "country" => array:18 [
+                    "id" => 185
                     "iso" => "RU"
                     "continent" => "EU"
-                    "lat" => "60"
-                    "lon" => "100"
+                    "lat" => 60
+                    "lon" => 100
                     "name_ru" => "Россия"
                     "name_en" => "Russia"
                     "timezone" => "Europe/Moscow"
-                    "area" => "17100000"
-                    "population" => "140702000"
-                    "capital_id" => "524901"
+                    "area" => 17100000
+                    "population" => 140702000
+                    "capital_id" => 524901
                     "capital_ru" => "Москва"
                     "capital_en" => "Moscow"
                     "cur_code" => "RUB"
                     "phone" => "7"
                     "neighbours" => "GE,CN,BY,UA,KZ,LV,PL,EE,LT,FI,MN,NO,AZ,KP"
-                    "vk" => "1"
-                    "utc" => "3"
-            ]
-            "error" => ""
-            "request" => "-1"
-            "created" => "2015.04.08"
-            "timestamp" => "1428516249"
+                    "vk" => 1
+                    "utc" => 3
+              ]
+              "error" => ""
+              "request" => -2
+              "created" => "2015.04.08"
+              "timestamp" => 1428516249
         ];
 ```
 #### Default Location
