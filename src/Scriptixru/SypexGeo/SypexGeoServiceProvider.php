@@ -31,13 +31,12 @@ class SypexGeoServiceProvider extends ServiceProvider {
 	public function register()
 	{
 		// Register providers.
-		$this->app['sypexgeo'] = $this->app->share(function($app)
-		{
+        $this->app->singleton('sypexgeo', function ($app) {
             $sypexConfig = $app['config'];
             $sypexConfigType = $sypexConfig->get('sypexgeo.sypexgeo.type', array());
             $sypexConfigPath = $sypexConfig->get('sypexgeo.sypexgeo.path', array());
 
-			switch ($sypexConfigType){
+            switch ($sypexConfigType){
                 case ('database'):
                     $sypexConfigFile = $sypexConfig->get('sypexgeo.sypexgeo.file', array());
                     $sxgeo = new SxGeo(base_path().$sypexConfigPath.$sypexConfigFile);
@@ -51,11 +50,8 @@ class SypexGeoServiceProvider extends ServiceProvider {
                     $sxgeo = new SxGeo(base_path().$sypexConfigPath.$sypexConfigFile);
             }
 
-			//return new GeoIP($app['config'], $app["session.store"]);
-
-
             return new SypexGeo($sxgeo, $app['config']);
-		});
+        });
 	}
 
 	/**
