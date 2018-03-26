@@ -2,11 +2,15 @@
     "name": "scriptixru/sypexgeo",
     "description": "Supports GeoIP services (sypexgeo.net).",
     "keywords": ["laravel", "laravel 5", "geoip", "location", "geolocation"],
-	"license": "BSD 2-Clause",
+	"license": "BSD-2-Clause",
     "authors": [
         {
             "name": "Varchak Valery",
             "email": "scriptixru@gmail.com"
+        },
+        {
+            "name": "Vitaly Baev",
+            "email": "hello@vitalybaev.ru"
         }
     ],
     "require": {
@@ -15,11 +19,6 @@
     "autoload": {
         "psr-4": {
           "Scriptixru\\SypexGeo\\": "src/Scriptixru/SypexGeo"
-        }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "0.2-dev"
         }
     }
 }
